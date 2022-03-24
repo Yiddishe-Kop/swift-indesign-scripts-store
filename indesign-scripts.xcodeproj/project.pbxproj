@@ -11,6 +11,12 @@
 		CC108D0A27ECFF2A00015617 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC108D0927ECFF2A00015617 /* ContentView.swift */; };
 		CC108D0C27ECFF2D00015617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC108D0B27ECFF2D00015617 /* Assets.xcassets */; };
 		CC108D0F27ECFF2D00015617 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC108D0E27ECFF2D00015617 /* Preview Assets.xcassets */; };
+		CC283E4427ED0B9500E4584A /* ScriptsIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC283E4327ED0B9500E4584A /* ScriptsIndex.swift */; };
+		CC283E4627ED0C8400E4584A /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC283E4527ED0C8400E4584A /* Models.swift */; };
+		CC283E4827ED0CAD00E4584A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC283E4727ED0CAD00E4584A /* Store.swift */; };
+		CC3D9C7F27ED135B000DB379 /* ScriptListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D9C7E27ED135B000DB379 /* ScriptListItem.swift */; };
+		CC3D9C8227ED1485000DB379 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = CC3D9C8127ED1485000DB379 /* CachedAsyncImage */; };
+		CC3D9C8427ED15BD000DB379 /* ScriptDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D9C8327ED15BD000DB379 /* ScriptDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,11 @@
 		CC108D0B27ECFF2D00015617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC108D0E27ECFF2D00015617 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CC108D1027ECFF2D00015617 /* indesign_scripts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = indesign_scripts.entitlements; sourceTree = "<group>"; };
+		CC283E4327ED0B9500E4584A /* ScriptsIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptsIndex.swift; sourceTree = "<group>"; };
+		CC283E4527ED0C8400E4584A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CC283E4727ED0CAD00E4584A /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		CC3D9C7E27ED135B000DB379 /* ScriptListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptListItem.swift; sourceTree = "<group>"; };
+		CC3D9C8327ED15BD000DB379 /* ScriptDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3D9C8227ED1485000DB379 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,9 +66,14 @@
 			children = (
 				CC108D0727ECFF2A00015617 /* indesign_scriptsApp.swift */,
 				CC108D0927ECFF2A00015617 /* ContentView.swift */,
+				CC283E4327ED0B9500E4584A /* ScriptsIndex.swift */,
+				CC3D9C8327ED15BD000DB379 /* ScriptDetail.swift */,
+				CC3D9C7E27ED135B000DB379 /* ScriptListItem.swift */,
 				CC108D0B27ECFF2D00015617 /* Assets.xcassets */,
 				CC108D1027ECFF2D00015617 /* indesign_scripts.entitlements */,
 				CC108D0D27ECFF2D00015617 /* Preview Content */,
+				CC283E4527ED0C8400E4584A /* Models.swift */,
+				CC283E4727ED0CAD00E4584A /* Store.swift */,
 			);
 			path = "indesign-scripts";
 			sourceTree = "<group>";
@@ -85,6 +102,9 @@
 			dependencies = (
 			);
 			name = "indesign-scripts";
+			packageProductDependencies = (
+				CC3D9C8127ED1485000DB379 /* CachedAsyncImage */,
+			);
 			productName = "indesign-scripts";
 			productReference = CC108D0427ECFF2A00015617 /* indesign-scripts.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +133,9 @@
 				Base,
 			);
 			mainGroup = CC108CFB27ECFF2A00015617;
+			packageReferences = (
+				CC3D9C8027ED1485000DB379 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = CC108D0527ECFF2A00015617 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC283E4827ED0CAD00E4584A /* Store.swift in Sources */,
 				CC108D0A27ECFF2A00015617 /* ContentView.swift in Sources */,
+				CC3D9C8427ED15BD000DB379 /* ScriptDetail.swift in Sources */,
+				CC283E4427ED0B9500E4584A /* ScriptsIndex.swift in Sources */,
+				CC3D9C7F27ED135B000DB379 /* ScriptListItem.swift in Sources */,
 				CC108D0827ECFF2A00015617 /* indesign_scriptsApp.swift in Sources */,
+				CC283E4627ED0C8400E4584A /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +302,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"indesign-scripts/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +328,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"indesign-scripts/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -334,6 +364,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC3D9C8027ED1485000DB379 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC3D9C8127ED1485000DB379 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC3D9C8027ED1485000DB379 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC108CFC27ECFF2A00015617 /* Project object */;
 }
